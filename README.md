@@ -1,13 +1,13 @@
 # cc-extract-anchors
 Extract URL's from Common Crawl data using flex scanner generator
 
-###Compiling
+### Compiling
 ```sh
 $ flex scan.lex
 $ cc -O2 lex.yy.c -o ccea
 ```
 
-###Getting test Common Crawl data
+### Getting test Common Crawl data
 
 Small test dataset:
 ```sh
@@ -19,7 +19,7 @@ Bigger and more recent dataset:
 $ wget -c http://s3.amazonaws.com/aws-publicdatasets/common-crawl/crawl-data/CC-MAIN-2016-07/segments/1454701145519.33/warc/CC-MAIN-20160205193905-00000-ip-10-236-182-209.ec2.internal.warc.gz
 ```
 
-###Extracting anchors
+### Extracting anchors
 
 Unzip data file
 ```sh
